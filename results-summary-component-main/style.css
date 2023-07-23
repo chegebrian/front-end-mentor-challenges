@@ -35,11 +35,16 @@ html{
 
 .wrapper{
     align-items: center;
+    
     display: flex;
     justify-content: center;
     margin: 30px auto;
     max-width: 375px;
     min-height: 100vh;
+}
+
+.center{
+    box-shadow: 0px 8px 50px 5px rgba(0,0,0,0.1);
 }
 
 
@@ -48,6 +53,7 @@ html{
     background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
     border-bottom-left-radius: 1.2rem;
     border-bottom-right-radius: 1.2rem;
+    
     padding: 1.5rem;
 }
 
@@ -99,6 +105,7 @@ main{
 
 .summary__heading{
     color: var(--Dark-gray-blue);
+
 }
 
 .summary__list{
@@ -161,7 +168,86 @@ main{
     border-radius: 2rem;
     border: 0;
     color: var(--Pale-blue);
+    cursor: pointer;
     outline: none;
     padding: 1rem 1.5rem;
     width: 100%;
+}
+
+.btn:hover{
+    background-color: hsla(224, 30%, 27%, 0.945);
+}
+
+@media screen and (min-width: 768px){
+    .wrapper{
+        max-width: 1440px;
+    }
+
+    .center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom-right-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+    }
+
+    .column--alignment{
+        display: block;
+    }
+
+    .score {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .header--alignment{
+        /* align-items: center; */
+        text-align: center;
+        
+        
+        /* justify-content: center; */
+    }
+
+    .header{
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+        /* padding-top: 1rem;
+        padding-bottom: 1rem; */
+    }
+
+    main{
+        border-bottom-right-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+        
+    }
+
+    .header h1, .summary__heading {
+        font-size: 1.5rem;
+        /* padding-bottom: 1.2rem; */
+    }
+
+    .header div{
+
+        font-size: 3rem;
+        height: 100px;
+        width: 100px;
+    }
+
+    .header span{
+        font-size: 1rem;
+    }
+
+    .header h2{
+        
+        font-size: 1.8rem;
+        
+    }
+    
+    .header p {
+        
+        padding-top: 1rem;
+        
+    }
 }
