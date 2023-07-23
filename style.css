@@ -81,3 +81,36 @@ html{
     padding-top: 0.5rem;
     text-align: center;
 }
+
+/* ! main section - summary */
+main{
+    padding: 1.5rem;
+}
+
+.summary__heading{
+    color: var(--Dark-gray-blue);
+}
+
+.summary__list{
+    list-style-type: none;
+}
+
+.summary__reaction{
+    background-color: #ff57573d;
+    color: #ff5737;
+}
+
+.summary--default{
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.65rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin--right{
+    margin-right: 0.7rem;
+}
+.margin--left{
+    margin-left: 0.7rem;
+}
