@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+/* ! colors */
+:root {
+/* Primary */
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+/* Neutral */
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    background-color: var(--Cream);
+    overflow-x: hidden;
+}
+.wrapper{
+    align-items: center;
+    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 375px;
+    min-height: 100vh;
+}
+.wrap{
+    background-color: var(--White);
+    border-radius: 1rem;
+    box-shadow: 0px 8px 50px 5px rgba(0,0,0,0.1);
+}
+.image__perfume{
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+img{
+    width: 100%;
+        border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.main{
+    padding: 2rem;
+}
+.item{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 1.5rem;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    color: var(--Very-dark-blue);
+    margin-bottom: 1.5rem;
+}
+.description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+
+/* ! price */
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.price .offer{
+    color: var(--Dark-cyan);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    margin-right: 1rem;
+}
+.price .initial-price{
+    color: var(--Dark-grayish-blue);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ! button */
+.btn{
+    border: 0;
+    outline: 0;
+    border-radius: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+.btn--success{
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    padding: 1rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.material-symbols-rounded{
+    margin-right: 0.5rem;
+}
